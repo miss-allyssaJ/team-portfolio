@@ -10,12 +10,11 @@ import Contact from "./pages/Contact";
 import "./assets/styles.css";
 import 'font-awesome/css/font-awesome.min.css';
 
-
 const App = () => (
   <Router>
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen overflow-x-hidden">
       <Navbar />
-      <main className="flex-grow container mx-auto p-6">
+      <main className="flex-grow px-4 pt-24 pb-6 overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

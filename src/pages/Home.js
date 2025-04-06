@@ -63,8 +63,8 @@ const Home = () => {
 
       for (let i = 0; i < numberOfIcons; i++) {
         const icon = icons[Math.floor(Math.random() * icons.length)];
-        const top = Math.floor(Math.random() * 90) + "%";
-        const left = Math.floor(Math.random() * 90) + "%";
+        const top = Math.floor(Math.random() * 85) + 5 + "%";
+        const left = Math.floor(Math.random() * 85) + 5 + "%";
         const rotate = Math.floor(Math.random() * 360);
         const opacity = Math.random() * 0.5 + 0.3;
 
@@ -90,7 +90,7 @@ const Home = () => {
 
   return (
     <div className="w-full min-h-screen bg-white relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full h-full z-0">
+      <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden max-w-full">
         {iconPositions.map((position, index) => (
           <div
             key={index}
