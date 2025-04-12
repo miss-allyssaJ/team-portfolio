@@ -89,6 +89,7 @@ const Home = () => {
   };
 
   return (
+    
     <div className="w-full min-h-screen bg-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full z-0 overflow-hidden max-w-full">
         {iconPositions.map((position, index) => (

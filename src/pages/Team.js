@@ -1,16 +1,16 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaGithub } from "react-icons/fa";
 
 const teamMembers = [
   {
     id: 1,
     name: "Erish Gonzales",
-    title: "",
+    title: "Initial Setup Assistant",
     image: "pic1.jpg",
-    description: "",
+    description: "Helped in the early stage of the project by attempting to set up the development environment and tools needed for React.js.",
     socials: {
       facebook: "https://www.facebook.com/adobo.sana",
-      instagram: "https://instagram.com/erish",
+      github: "https://github.com/Erish-karl", 
       twitter: "https://twitter.com/erish",
     },
   },
@@ -22,7 +22,7 @@ const teamMembers = [
     description: "Creates interactive and user-friendly web interfaces.",
     socials: {
       facebook: "https://www.facebook.com/aleck.sahagun",
-      instagram: "https://instagram.com/dannekurt",
+      github: "https://github.com/dangkoy", 
       twitter: "https://twitter.com/dannekurt",
     },
   },
@@ -31,10 +31,10 @@ const teamMembers = [
     name: "Allyssa Jhones Tañedo",
     title: "Project Manager/Frontend Developer/Designer",
     image: "pic3.jpg",
-    description: "Leads the team with strategic planning and coordination. Develops responsive UI components for a seamless experience.Focuses on branding and UI aesthetics for consistency.",
+    description: "Leads the team with strategic planning and coordination. Develops responsive UI components for a seamless experience.",
     socials: {
       facebook: "https://www.facebook.com/profile.php?id=61563630730602",
-      instagram: "https://instagram.com/allyssa",
+      github: "https://github.com/miss-allyssaJ",
       twitter: "https://twitter.com/allyssa",
     },
   },
@@ -46,19 +46,19 @@ const teamMembers = [
     description: "Designs visuals and ensures an appealing user experience.",
     socials: {
       facebook: "https://www.facebook.com/rzzspnda",
-      instagram: "https://instagram.com/ana",
+      github: "https://github.com/rzzspnda",
       twitter: "https://twitter.com/ana",
     },
   },
   {
     id: 5,
     name: "Edcel Garbanzos",
-    title: "",
+    title: "Quality Assurance (QA) Tester",
     image: "pic5.jpg",
-    description: "",
+    description: "Responsible for checking the website for bugs, errors, and usability issues. Provided feedback to ensure the system works smoothly and meets user expectations.",
     socials: {
       facebook: "https://www.facebook.com/profile.php?id=61564661087898",
-      instagram: "https://instagram.com/edcel",
+      github: "https://github.com/Edcel-Garbanzos",  
       twitter: "https://twitter.com/edcel",
     },
   },
@@ -82,13 +82,12 @@ const Team = () => {
             <h3 className="text-lg font-semibold text-gray-800">{member.name}</h3>
             <p className="text-xs text-gray-600 mt-2 px-4 text-center">{member.description}</p>
 
-          
             <div className="flex gap-4 mt-3">
               <a href={member.socials.facebook} target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition">
                 <FaFacebook size={20} />
               </a>
-              <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-700 transition">
-                <FaInstagram size={20} />
+              <a href={member.socials.github} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-gray-600 transition">
+                <FaGithub size={20} /> 
               </a>
               <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-600 transition">
                 <FaTwitter size={20} />
