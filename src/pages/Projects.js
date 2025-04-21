@@ -113,8 +113,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-
-      {/* Fullscreen Modal - Bigger Screenshot */}
+      
       {selectedProject && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 px-4">
           <div className="relative bg-white rounded-xl p-8 w-full max-w-5xl max-h-[95vh] overflow-y-auto shadow-2xl">

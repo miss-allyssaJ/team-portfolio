@@ -14,7 +14,7 @@ const App = () => (
   <Router>
     <div className="flex flex-col min-h-screen overflow-x-hidden">
       <Navbar />
-      <main className="flex-grow px-4 pt-24 pb-6 overflow-x-hidden">
+      <main className="flex-grow px-4 pb-6 overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

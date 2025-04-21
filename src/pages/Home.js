@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 
 const icons = [
   "fas fa-laptop-code",
@@ -44,7 +44,7 @@ const icons = [
 const Home = () => {
   const [inView, setInView] = useState(false);
   const [iconPositions, setIconPositions] = useState([]);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -85,7 +85,7 @@ const Home = () => {
   }, []);
 
   const handleExploreClick = () => {
-    navigate("/projects"); // Navigate to /projects
+    navigate("/projects"); 
   };
 
   return (

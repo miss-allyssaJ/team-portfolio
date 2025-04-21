@@ -17,10 +17,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",  // Use your EmailJS service ID
-        "YOUR_TEMPLATE_ID",  // Use your EmailJS template ID
+        "service_2ol2nq4",  
+        "template_j1pjhs7", 
         e.target,
-        "YOUR_USER_ID"       // Use your EmailJS user ID
+        "h0_AGJ-ydwwnR7Zdw"      
       )
       .then(
         (result) => {
@@ -38,8 +38,7 @@ const Contact = () => {
       <p className="mt-4 text-gray-600 text-sm sm:text-base lg:text-lg">
         Feel free to reach out to us via the form below.
       </p>
-
-      {/* Contact Form */}
+      
       <div className="mt-6 max-w-md mx-auto w-full">
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <input
