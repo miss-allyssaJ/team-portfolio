@@ -15,7 +15,11 @@ const teamMembers = [
       instagram:
         "https://www.instagram.com/koyizhim?igsh=MTgxbDl5ZjRrZjJpYg==",
     },
-    skills: ["React.js", "Node.js", "Development Setup"],
+    skills: [
+      "MIT App Companion ",
+      "Arduino",
+      "Development Setup"
+    ],
   },
   {
     id: 2,
@@ -29,7 +33,16 @@ const teamMembers = [
       github: "https://github.com/dangkoy",
       instagram: "https://instagram.com/dannekurt",
     },
-    skills: ["HTML", "CSS", "JavaScript", "React"],
+    skills: [
+      "UI/UX Design",
+      "HTML",
+      "CSS",
+      "React.js",
+      "Tailwind CSS",
+      "PHP",
+      "MySQL",
+      "XAMPP",
+    ]
   },
   {
     id: 3,
@@ -44,7 +57,18 @@ const teamMembers = [
       instagram:
         "https://www.instagram.com/allyssa_jhones?igsh=MWh4bDR4dzRha245ZA==",
     },
-    skills: ["Project Management", "UI/UX Design", "React", "Tailwind CSS"],
+    skills: [
+      "HTML",
+      "CSS",
+      "React.js",
+      "Tailwind CSS",
+      "PHP",
+      "MySQL",
+      "XAMPP",
+      "GitHub",
+      "Vercel"
+    ]
+    
   },
   {
     id: 4,
@@ -58,7 +82,17 @@ const teamMembers = [
       github: "https://github.com/rzzspnda",
       instagram: "https://instagram.com/ana",
     },
-    skills: ["Figma", "Photoshop", "UI Design", "Branding"],
+    skills: [
+      "UI/UX Design",
+      "Figma",
+      "HTML",
+      "CSS",
+      "React.js",
+      "Tailwind CSS",
+      "PHP",
+      "MySQL",
+      "XAMPP",
+    ]
   },
   {
     id: 5,
@@ -72,7 +106,10 @@ const teamMembers = [
       github: "https://github.com/Edcel-Garbanzos",
       instagram: "https://instagram.com/edcel",
     },
-    skills: ["Testing", "Bug Tracking", "Quality Assurance", "Reporting"],
+    skills: [
+      "Testing", 
+      "Quality Assurance", 
+      "Reporting"],
   },
 ];
 
