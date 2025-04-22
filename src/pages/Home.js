@@ -148,11 +148,15 @@ const Home = () => {
       <div className="text-center mb-12 z-10 relative">
         <button
           onClick={handleExploreClick}
-          className="mt-8 px-8 py-3 bg-blue-600 text-white text-lg font-semibold rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-xl"
+          className="mt-8 px-8 py-3 text-white text-lg font-semibold rounded-lg shadow-lg transition-all hover:scale-105 hover:shadow-xl animate-gradient-x"
         >
           Explore Our Work
         </button>
       </div>
+
+
+
+
     </div>
   );
 };

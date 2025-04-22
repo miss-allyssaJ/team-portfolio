@@ -31,7 +31,7 @@ const teamMembers = [
     socials: {
       facebook: "https://www.facebook.com/aleck.sahagun",
       github: "https://github.com/dangkoy",
-      instagram: "https://instagram.com/dannekurt",
+      instagram: "https://www.instagram.com/dang_koy?igsh=anI1azVpMjRmZzMz",
     },
     skills: [
       "UI/UX Design",
@@ -80,7 +80,7 @@ const teamMembers = [
     socials: {
       facebook: "https://www.facebook.com/rzzspnda",
       github: "https://github.com/rzzspnda",
-      instagram: "https://instagram.com/ana",
+      instagram: "https://www.instagram.com/rzzspnda?igsh=eTBxcXJ4aGZhZHE4&utm_source=qr",
     },
     skills: [
       "UI/UX Design",
@@ -104,7 +104,7 @@ const teamMembers = [
     socials: {
       facebook: "https://www.facebook.com/profile.php?id=61564661087898",
       github: "https://github.com/Edcel-Garbanzos",
-      instagram: "https://instagram.com/edcel",
+      instagram: "https://www.instagram.com/kwiiiiikiiiii?igsh=NG96MmtocnN1b2h4",
     },
     skills: [
       "Testing", 
