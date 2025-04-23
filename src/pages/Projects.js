@@ -20,7 +20,8 @@ const projects = [
   {
     id: 2,
     title: "Court Reservation System",
-    description: "A booking system for sports courts, making it easier to reserve a court even while you're just at home.",
+    description:
+      "A booking system for sports courts, making it easier to reserve a court even while you're just at home.",
     technologies: ["HTML", "PHP", "CSS", "JavaScript"],
     image: "court-reservation.png",
     images: ["court1.jpg", "court2.jpg", "court3.jpg", "court4.jpg"],
@@ -28,7 +29,8 @@ const projects = [
   {
     id: 3,
     title: "Team Portfolio Website",
-    description: "A collaborative team website that highlights our journey and showcases the projects we've built together.",
+    description:
+      "A collaborative team website that highlights our journey and showcases the projects we've built together.",
     technologies: ["react.js", "Tailwind", "Framer Motion"],
     image: "team1.jpg",
     images: [
@@ -74,18 +76,18 @@ const Projects = () => {
         Our Projects
       </h2>
       <p className="mt-4 text-gray-600">
-        Featuring the projects we've completed as a team last semester and our
-        ongoing work.
+        Featuring the projects we've completed as a team last semester and our ongoing work.
       </p>
 
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="p-[2px] rounded-lg bg-gradient-to-r from-[#f09433] via-[#e6683c] to-[#bc1888] transition hover:shadow-xl cursor-pointer"
+            className="relative rounded-xl cursor-pointer transition-all duration-300"
             onClick={() => openProject(project)}
           >
-            <div className="bg-white shadow-lg rounded-lg p-5">
+
+            <div className="relative bg-white rounded-xl p-5 z-10 shadow-lg">
               <div className="h-48 rounded-lg overflow-hidden">
                 <img
                   src={project.image}
@@ -96,9 +98,7 @@ const Projects = () => {
               <h3 className="mt-4 text-xl font-semibold text-gray-800">
                 {project.title}
               </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                {project.description}
-              </p>
+              <p className="text-gray-600 text-sm mt-2">{project.description}</p>
               <div className="mt-3 flex flex-wrap justify-center gap-2">
                 {project.technologies.map((tech, index) => (
                   <span
@@ -115,42 +115,41 @@ const Projects = () => {
       </div>
 
       {selectedProject && (
-  <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 px-4">
-    <div className="relative bg-white rounded-xl p-8 w-full max-w-5xl max-h-[95vh] overflow-y-auto shadow-2xl">
-      <button
-        onClick={closeModal}
-        className="absolute top-4 right-4 text-gray-700 hover:text-black text-3xl font-bold"
-      >
-        &times;
-      </button>
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 px-4">
+          <div className="relative bg-white rounded-xl p-8 w-full max-w-5xl max-h-[95vh] overflow-y-auto shadow-2xl">
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-gray-700 hover:text-black text-3xl font-bold"
+            >
+              &times;
+            </button>
 
-      <h2 className="text-2xl font-bold mb-3">{selectedProject.title}</h2>
-      <p className="text-gray-600 mb-5">{selectedProject.description}</p>
+            <h2 className="text-2xl font-bold mb-3">{selectedProject.title}</h2>
+            <p className="text-gray-600 mb-5">{selectedProject.description}</p>
 
-      <div className="relative w-full h-[500px] border rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
-        <img
-          src={selectedProject.images[currentStep]}
-          alt={`Screenshot`}
-          className="max-h-full max-w-full object-contain"
-        />
-      </div>
+            <div className="relative w-full h-[500px] border rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
+              <img
+                src={selectedProject.images[currentStep]}
+                alt={`Screenshot`}
+                className="max-h-full max-w-full object-contain"
+              />
+            </div>
 
-      <div className="mt-6 flex justify-between">
-        <button
-          onClick={prevStep}
-          disabled={currentStep === 0}
-          className={`px-6 py-2 rounded transition-all ${currentStep === 0 ? "opacity-50 cursor-not-allowed" : "animate-gradient-x text-white"} hover:scale-105 hover:shadow-lg`}
-        >
-          Previous
-        </button>
-        <button
-          onClick={nextStep}
-          disabled={currentStep === selectedProject.images.length - 1}
-          className={`px-6 py-2 rounded transition-all ${currentStep === selectedProject.images.length - 1 ? "opacity-50 cursor-not-allowed" : "animate-gradient-x text-white"} hover:scale-105 hover:shadow-lg`}
-        >
-          Next
-        </button>
-  
+            <div className="mt-6 flex justify-between">
+              <button
+                onClick={prevStep}
+                disabled={currentStep === 0}
+                className={`px-6 py-2 rounded transition-all ${currentStep === 0 ? "opacity-50 cursor-not-allowed" : "animate-gradient-x text-white"} hover:scale-105 hover:shadow-lg`}
+              >
+                Previous
+              </button>
+              <button
+                onClick={nextStep}
+                disabled={currentStep === selectedProject.images.length - 1}
+                className={`px-6 py-2 rounded transition-all ${currentStep === selectedProject.images.length - 1 ? "opacity-50 cursor-not-allowed" : "animate-gradient-x text-white"} hover:scale-105 hover:shadow-lg`}
+              >
+                Next
+              </button>
             </div>
           </div>
         </div>
