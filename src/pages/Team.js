@@ -41,7 +41,6 @@ const teamMembers = [
       "Tailwind CSS",
       "PHP",
       "MySQL",
-      "XAMPP",
     ]
   },
   {
@@ -64,7 +63,6 @@ const teamMembers = [
       "Tailwind CSS",
       "PHP",
       "MySQL",
-      "XAMPP",
       "GitHub",
       "Vercel"
     ]
@@ -91,7 +89,6 @@ const teamMembers = [
       "Tailwind CSS",
       "PHP",
       "MySQL",
-      "XAMPP",
     ]
   },
   {
